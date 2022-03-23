@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CoWeb</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- mobile phones screen settings -->
+  <!-- conncetion to Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- bootstrap main -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon(FA) -->
+  <link href="style.css" rel="stylesheet"> <!-- custom css -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- bootst -->
+  <!-- Adding script -->
+  <script src="shopping_cart.js" async></script>
+  <script src="filter.js" async></script>
+</head> 
+<body class="container fluid bg_image">
+  <div class="bg-light">
+
+  <!-- Navigation panel -->
+  <nav class="navbar navbar-expand-sm navbar-light">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link navbar-brand font-weight-bold" href="#">ConWeb</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Main page</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="catalogue.html">Catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="aboutus.html">About us</a>
+        </li>
+        <li class="nav-item me-5">
+          <a class="nav-link active" href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav">
+            <!-- Cart button -->
+        <li class="nav-item ms-auto mx-1">
+          <a href="shopping_cart.html"><button class="btn"><i class="fa fa-shopping-cart"></i></button></a>
+        </li>
+            <!-- Search form+button -->
+        <li class="nav-item ms-auto">
+          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+        </li>
+        <li class="nav-item ms-auto">
+          <button type="button" class="btn btn-outline-primary">search</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+  <div class="row p-5 mx-2">
+    <div class="col-md-4 container border"> <!-- filtres -->
+      <div class="row">  
+
+        <h2 class="p-2 text-center">Filter</h2>
+
+        <hr>
+
+        <ul class="form-check p-5 pt-1">
+          <li>
+            <h3>Category</h3>
+          </li>
+          <li>  
+            <input class="form-check-input" type="checkbox" id="check1" name="Wood" value="something" checked>
+            <label class="form-check-label">Paints</label>
+          </li>
+          <li>  
+            <input class="form-check-input" type="checkbox" id="check2" name="Colors" value="something" checked>
+            <label class="form-check-label">Wood</label>
+          </li>
+          <li>  
+            <input class="form-check-input" type="checkbox" id="check3" name="Cement" value="something" checked>
+            <label class="form-check-label">Cement</label>
+          </li>
+        </ul> 
+
+      </div>
+
+    </div> <!-- products -->
+
+    <div class="col-md-8">
+      <div class="row">
+        
+        <div class="card col-md-4">
+         <img src="image/colors.jpg" class="card_item">
+          <h1>Paints</h1>
+          <p class="price">$19.99</p>
+          <p>Since painting enhances the look of buildings, it is a common element of renovation projects.</p>
+          <p><button class="shop-item-button">Add to Cart</button></p>
+        </div>
+
+        <div class="card col-md-4">
+         <img src="image/wood.jpg" class="card_item">
+          <h1>Wood</h1>
+          <p class="price">$9.99</p>
+          <p>Wood has been used as a building material for thousands of years.</p>
+          <p><button class="shop-item-button">Add to Cart</button></p>
+        </div>
+
+        <div class="card col-md-4">
+         <img src="image/scale_1200.jfif" class="card_item">
+          <h1>Cement</h1>
+          <p class="price">$9.99</p>
+          <p>A cement is a binder, a substance used for construction that sets.</p>
+          <p><button class="shop-item-button">Add to Cart</button></p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-dark" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">Nurdaulet INC.</a>
+    </div>
+  </footer>
+</body>
+</html>
