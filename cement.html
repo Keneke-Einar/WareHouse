@@ -14,8 +14,6 @@
   <!-- Adding scripts -->
   <script src="search.js" async></script>
   <script src="dropdown.js" async></script>
-  <script src="shopping_cart.js" async></script>
-  <script src="filter.js" async></script>
 </head> 
 <body class="container fluid bg_image">
   <div class="bg-light">
@@ -28,10 +26,10 @@
           <a class="nav-link navbar-brand font-weight-bold" href="#">ConWeb</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Main page</a>
+          <a class="nav-link disabled" href="index.html">Main page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="catalogue.html">Catalogue</a>
+          <a class="nav-link active" href="catalogue.html">Catalogue</a>
         </li>
         <li class="nav-item">
           <a class="nav-link active" href="aboutus.html">About us</a>
@@ -61,69 +59,19 @@
     </div>
   </nav>
 
-
-
-  <div class="row p-5 mx-2">
-    <div class="col-md-4 container border"> <!-- filtres -->
-      <div class="row">  
-
-        <h2 class="p-2 text-center">Filter</h2>
-
-        <hr>
-
-        <ul class="form-check p-5 pt-1">
-          <li>
-            <h3>Category</h3>
-          </li>
-          <li>  
-            <input class="form-check-input" type="checkbox" id="check1" name="Wood" checked>
-            <label class="form-check-label">Paints</label>
-          </li>
-          <li>  
-            <input class="form-check-input" type="checkbox" id="check2" name="Colors" checked>
-            <label class="form-check-label">Wood</label>
-          </li>
-          <li>  
-            <input class="form-check-input" type="checkbox" id="check3" name="Cement" checked>
-            <label class="form-check-label">Cement</label>
-          </li>
-        </ul> 
-
-        <button type="button" id="filter_btn" class="btn btn-outline-primary mx-auto" style="width: 100px;">Use it</button>
-
-        <hr class="my-3">
-
+  <div class="cart_container container my-5 px-5 py-4">
+    <h3>Cement</h3>
+    <hr>
+    <div class="row">
+      <div class="col">
+        <p>
+          A cement is a binder, a substance used for construction that sets, hardens, and adheres to other materials to bind them together.
+        </p>
+        <p class="price">$9.99</p>
       </div>
 
-    </div> <!-- products -->
-
-    <div class="col-md-8">
-      <div class="row">
-        
-        <div class="card col-md-4" id="card1">
-         <img src="image/colors.jpg" class="card_item">
-          <h1>Paints</h1>
-          <p class="price">$19.99</p>
-          <p>Since painting enhances the look of buildings, it is a common element of renovation projects.</p>
-          <p><button class="shop-item-button">Add to Cart</button></p>
-        </div>
-
-        <div class="card col-md-4" id="card2">
-         <img src="image/wood.jpg" class="card_item">
-          <h1>Wood</h1>
-          <p class="price">$9.99</p>
-          <p>Wood has been used as a building material for thousands of years.</p>
-          <p><button class="shop-item-button">Add to Cart</button></p>
-        </div>
-
-        <div class="card col-md-4" id="card3">
-         <img src="image/scale_1200.jfif" class="card_item">
-          <h1>Cement</h1>
-          <p class="price">$9.99</p>
-          <p>A cement is a binder, a substance used for construction that sets.</p>
-          <p><button class="shop-item-button">Add to Cart</button></p>
-        </div>
-
+      <div class="col">
+        <img class="card-img-top card_item" src="image/scale_1200.jfif">
       </div>
     </div>
   </div>

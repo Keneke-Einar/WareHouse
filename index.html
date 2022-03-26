@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- icon(FA) -->
   <link href="style.css" rel="stylesheet"> <!-- custom css -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> <!-- js -->
+  <!-- Adding scripts -->
+  <script src="search.js" async></script>
+  <script src="dropdown.js" async></script>
 </head>
 <body class="container fluid bg_image">
   <div class="bg-light">
@@ -40,10 +43,15 @@
         </li>
             <!-- Search form+button -->
         <li class="nav-item ms-auto">
-          <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+          <input type="search" id="searchbar" onclick="myFunction()" onkeyup="search_animal()" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon"/>
+          <div id="myDropdown" class="dropdown-content list">
+            <a class="animals" href="colors.html">Paints</a>
+            <a class="animals" href="wood.html">Wood</a>
+            <a class="animals" href="cement.html">Cement</a>
+          </div>
         </li>
         <li class="nav-item ms-auto">
-          <button type="button" class="btn btn-outline-primary">search</button>
+          <button type="button" id="searchbar_btn" class="btn btn-outline-primary">search</button>
         </li>
       </ul>
     </div>
@@ -69,14 +77,14 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="image/carousel_2.jpg" alt="Chicago" class="d-block" style="width:100%">
+        <img src="image/carousel_2.jpg" class="d-block" style="width:100%">
         <div class="carousel-caption">
           <h3 class="text-black">Staff</h3>
           <p class="text-black">The most polite and attentive!</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="image/carousel_3.jpg" alt="New York" class="d-block" style="width:100%">
+        <img src="image/carousel_3.jpg" class="d-block" style="width:100%">
         <div class="carousel-caption">
           <h3 class="text-black">Prices</h3>
           <p class="text-black">The most affordable prices!</p>
@@ -103,14 +111,14 @@
   </div>
 
   <!-- Сard's -->
-  <div class="row p-5 my-5 ">
+  <div class="row p-5 my-5">
     <!-- #1 -->
     <div class="col-4 card">
       <img class="card-img-top card_item" src="image/colors.jpg" alt="Card image">
       <div class="card-body">
         <h4 class="card-title">Paints</h4>
         <p class="card-text">Since painting enhances the look of buildings, it is a common element of renovation projects. However, paints have additional uses beyond improving appearance.</p>
-        <a href="#" class="btn btn-primary">More</a>
+        <a href="colors.html" class="btn btn-primary">More</a>
       </div>
     </div>
 
@@ -120,7 +128,7 @@
       <div class="card-body">
         <h4 class="card-title">Wood</h4>
         <p class="card-text">Wood has been used as a building material for thousands of years, being second only to stone in terms of its rich and storied history in the world of construction.</p>
-        <a href="#" class="btn btn-primary">More</a>
+        <a href="wood.html" class="btn btn-primary">More</a>
       </div>
     </div>
 
@@ -130,7 +138,7 @@
       <div class="card-body">
         <h4 class="card-title">Cement</h4>
         <p class="card-text">A cement is a binder, a substance used for construction that sets, hardens, and adheres to other materials to bind them together.</p>
-        <a href="#" class="btn btn-primary">More</a>
+        <a href="cement.html" class="btn btn-primary">More</a>
       </div>
     </div>
   </div>
